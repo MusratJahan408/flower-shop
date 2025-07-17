@@ -1,0 +1,152 @@
+/* common styles  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.flower-description {
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 1.12rem;
+    margin-bottom: 32px;
+}
+
+#flower-description-width {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.flower-btn {
+    background-color: #E55473;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.flower-container {
+    max-width: 1440px;
+    margin: 128px auto;
+}
+
+.flower-section-title {
+    color: #272727;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* header  */
+header {
+    background-color: rgba(229, 84, 115, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 240px 0;
+
+}
+
+.flower-banner-content {
+    max-width: 700px;
+}
+
+.flower-banner-title {
+    color: #272727;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+header img {
+    width: 100%;
+}
+
+/* flower features */
+.flowers-feature-container {
+    margin-top: 48px;
+}
+
+.flowers-feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.flower-tree img {
+    width: 100%;
+}
+
+.flower-tree-img-1 {
+    background-color: rgba(167, 33, 98, 0.15);
+    border-radius: 300px 300px 0 0;
+    padding: 100px 75px 0;
+
+}
+
+.flower-tree-img-2 {
+    background-color: rgba(5, 151, 160, 0.15);
+    border-radius: 300px 300px 0 0;
+    padding: 110px 45px 50px;
+}
+
+.flower-tree-img-3 {
+    background-color: rgba(71, 125, 17, 0.15);
+    border-radius: 300px 300px 0 0;
+    padding: 60px 75px 0;
+}
+
+.tree-name {
+    color: #272727;
+    font-size: 1.5rem;
+    font-size: 700;
+    text-decoration: underline;
+    margin-top: 32px;
+}
+
+/* flower responsive layout */
+/* small device  */
+@media screen and (max-width:576px) {
+    header {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px 20px 0;
+        gap: 20px;
+    }
+
+    .flowers-feature-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* medium device  */
+@media screen and (min-width:577px) and (max-width:992px) {
+    header {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 50px 50px 0;
+
+    }
+
+    .flowers-feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flower-tree-img-2 {
+        padding: 100px 45px 25px;
+    }
+
+}
