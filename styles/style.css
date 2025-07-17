@@ -14,9 +14,13 @@ body {
     margin-bottom: 32px;
 }
 
-#flower-description-width {
+.flower-description-width {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.primary-color {
+    color: #E55473;
 }
 
 .flower-btn {
@@ -31,7 +35,7 @@ body {
 
 .flower-container {
     max-width: 1440px;
-    margin: 128px auto;
+    margin: 128px auto 0;
 }
 
 .flower-section-title {
@@ -61,7 +65,7 @@ header {
 
 .flower-banner-title {
     color: #272727;
-    font-size: 80px;
+    font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 32px;
 }
@@ -112,20 +116,153 @@ header img {
     margin-top: 32px;
 }
 
+/* flower shop contact  */
+.flower-shop-contact {
+    background-color: rgba(39, 39, 39, 0.05);
+    border-radius: 8px;
+
+
+}
+
+.flower-contact-container {
+    padding: 85px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.contact-shop p {
+    font-size: 1.25rem;
+    color: rgba(39, 39, 39, 0.80);
+    font-weight: 600;
+    margin-top: 24px;
+
+}
+
+/* flower sale discount  */
+.flower-sale-discount-container {
+    background-color: rgba(229, 84, 115, 0.05);
+    margin-top: 128px;
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    padding: 100px 400px;
+}
+
+.flower-sale-discount-container img {
+    max-width: 100%;
+}
+
+.sale-discount-container .flower-btn {
+    margin-top: 32px;
+}
+
+/* instagram flowers  */
+.instagram-flowers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.instagram-flowers img {
+    max-width: 100%;
+}
+
+/* latest deal  */
+.latest-deal {
+    background-image: url('../Flower Asset/Rectangle 9.png');
+    background-repeat: no-repeat;
+
+}
+
+.latest-deal-container {
+    padding: 120px;
+}
+
+.latest-deal h4 {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 50%;
+    padding: 22px;
+    color: rgba(39, 39, 39, 0.60);
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    margin-top: 48px;
+    margin-right: 16px;
+}
+
+/* footer  */
+footer {
+    background-color: #111010;
+    margin-top: 128px;
+
+}
+
+.footer-text {
+    padding: 128px 0;
+}
+
+.footer-title {
+    color: white;
+}
+
+.footer-description-1 {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 1.12rem;
+    margin-bottom: 32px;
+}
+
+.footer-description-2 {
+    color: rgba(255, 255, 255, 0.40);
+
+}
+
 /* flower responsive layout */
 /* small device  */
 @media screen and (max-width:576px) {
-    header {
+
+    header,
+    .flower-sale-discount-container {
         flex-direction: column;
     }
 
-    header {
+    header,
+    .flower-sale-discount-container {
         padding: 20px 20px 0;
         gap: 20px;
     }
 
-    .flowers-feature-container {
+    .flower-contact-container,
+    .latest-deal-container,
+    .footer-text {
+        padding: 20px;
+    }
+
+
+    .flowers-feature-container,
+    .flower-contact-container,
+    .instagram-flowers {
         grid-template-columns: 1fr;
+    }
+
+    .flower-container,
+    .flower-sale-discount-container,
+    footer {
+        margin-top: 60px;
+    }
+
+    .latest-deal {
+        background-image: none;
+        background-color: rgba(5, 151, 160, 0.15);
+        border-radius: 10px;
+    }
+
+    input[type="email"] {
+        margin-bottom: 10px;
     }
 
 }
@@ -147,6 +284,20 @@ header img {
 
     .flower-tree-img-2 {
         padding: 100px 45px 25px;
+    }
+
+    .flower-contact-container,
+    .flower-sale-discount-container,
+    .latest-deal-container {
+        padding: 30px;
+    }
+
+    .flower-sale-discount-container {
+        gap: 30px;
+    }
+
+    .latest-deal h4 {
+        color: #E55473;
     }
 
 }
